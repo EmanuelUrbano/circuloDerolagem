@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.circ{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    position: relative;
+    animation: descer 5s infinite;
+
+}
+.a1{
+    height: 40vh;
+    width: 30vw;
+    border: solid blue;
+    border-radius: 50%;
+    background-color: blue;
+}
+.a2{
+    height: 40vh;
+    width: 30vw;
+    border: solid green;
+    border-radius: 50%;
+    background-color: green;
+}
+.a3{
+    height: 40vh;
+    width: 30vw;
+    border: solid red;
+    border-radius: 50%;
+    background-color: red;
+}
+.a4{
+    height: 40vh;
+    width: 30vw;
+    border: solid pink;
+    border-radius: 50%;
+    background-color: pink;
+}
+.a5{
+    height: 40vh;
+    width: 30vw;
+    border: solid yellow;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.a6{
+    height: 40vh;
+    width: 30vw;
+    border: solid purple;
+    border-radius: 50%;
+    background-color: #800080;
+    transform: rotate(20deg);
+    border-bottom: solid #44078C 20px;
+}
+
+.rodan{
+    background-color: #708090;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.rod{
+    width: 7vw;
+    height: 7vw;
+    border-bottom: solid #799BA6;
+    border-top: solid #799BA6;
+    border-left: solid #799BA6;
+    border-right: solid white;
+    border-right-width: 2px;
+    border-radius: 100%;
+    animation: rodar infinite 0.5s;
+}
+
+@keyframes descer{
+    from {top: 0;}
+    to {top: 200px;}
+}
+@keyframes rodar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
